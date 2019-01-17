@@ -23,9 +23,9 @@ int main() {
 	sf::RenderWindow window(sf::VideoMode(1000, 600), "Figure", sf::Style::Default, settings);
 	window.setFramerateLimit(180);
 
-	Figure f1(sf::Vector2f(250, 250), 50, 0.2f);
-	Figure f2(sf::Vector2f(50, 250), 20, 0.6f);
-	Figure f3(sf::Vector2f(600, 350), 20, 0.f);
+	Figure f1(sf::Vector2f(500, 300), 100, 0.2f);
+	Figure f2(sf::Vector2f(100, 250), 35, 0.6f);
+	Figure f3(sf::Vector2f(900, 350), 35, 0.05f);
 
 	sf::Clock clock;
 	float frameTime;
