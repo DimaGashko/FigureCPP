@@ -18,14 +18,14 @@ void controlFigure(Figure &figure, float frameTime);
 
 int main() {
 	sf::ContextSettings settings;
-	settings.antialiasingLevel = 4;
+	settings.antialiasingLevel = 5;
 
 	sf::RenderWindow window(sf::VideoMode(1000, 600), "Figure", sf::Style::Default, settings);
 	window.setFramerateLimit(180);
 
-	Figure f1(sf::Vector2f(500, 300), 100, 0.2f);
-	Figure f2(sf::Vector2f(100, 250), 35, 0.6f);
-	Figure f3(sf::Vector2f(900, 350), 35, 0.05f);
+	Figure f1(sf::Vector2f(700, 400), 120, 0.2f);
+	Figure f2(sf::Vector2f(200, 300), 40, 0.6f);
+	Figure f3(sf::Vector2f(1200, 500), 40, 0.05f);
 
 	sf::Clock clock;
 	float frameTime;
@@ -60,7 +60,7 @@ void controlFigure(Figure &figure, float frameTime) {
 	typedef sf::Keyboard::Key Key;
 
 	float step = 0.3f * frameTime;
-	float angle = 0.005f * frameTime;
+	float angle = 0.004f * frameTime;
 	float scale = 0.05f * frameTime;
 
 	if (sf::Keyboard::isKeyPressed((Key)Keys::Left)) {
