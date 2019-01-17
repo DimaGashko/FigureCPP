@@ -32,8 +32,8 @@ int main() {
 
 	while (window.isOpen()) {
 		frameTime = (float)clock.restart().asMilliseconds();
-
-		sf::Event event;
+		  
+		sf::Event event; 
 		while (window.pollEvent(event)) {
 			if (event.type == sf::Event::Closed) {
 				window.close();
